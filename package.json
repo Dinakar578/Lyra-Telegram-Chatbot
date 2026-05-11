@@ -9,6 +9,8 @@
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
     "dotenv": "^16.6.1",
-    "node-telegram-bot-api": "^0.67.0"
+    "node-telegram-bot-api": "^0.63.0",
+    "request": "^2.88.2",
+    "tough-cookie": "^6.0.1"
   }
 }
