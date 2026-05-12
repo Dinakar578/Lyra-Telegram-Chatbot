@@ -4,8 +4,8 @@ const { saveMessage, getHistory, clearHistory, saveUserProfile } = require("./fi
 require("dotenv").config();
 
 // ─── Initialize ───
-const bot = new TelegramBot("8657817223:AAGAsvP4EQgJqppjXCyIsWw6WMHz2evzkEU", { polling: true });
-const genAI = new GoogleGenerativeAI("AIzaSyBaQ3l9cvKM2EUwqE7O-NcN5rWOE29WPJM");
+const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 const SYSTEM_PROMPT = `You are Lyra, a smart and friendly Telegram assistant.
 
