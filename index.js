@@ -153,3 +153,15 @@ process.on("uncaughtException", (err) => console.error("Uncaught:", err.message)
 console.log("✅ Lyra Bot is LIVE!");
 console.log("📱 Open Telegram and chat with your bot.");
 console.log("🛑 Press Ctrl+C to stop.\n");
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Lyra Telegram Bot Running");
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
