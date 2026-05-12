@@ -12,6 +12,7 @@
     "express": "^5.2.1",
     "node-telegram-bot-api": "^0.67.0",
     "request": "^2.88.2",
-    "tough-cookie": "^6.0.1"
+    "tough-cookie": "^6.0.1",
+    "uuid": "^14.0.0"
   }
 }
